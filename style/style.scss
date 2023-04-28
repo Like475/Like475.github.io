@@ -1,4 +1,4 @@
-@import "_variables.scss";
+@import "data";
 @import url("./../fonts/phonkSans.woff2");
 
 html {
@@ -74,8 +74,78 @@ section {
 
 .bio {
   &__title {
-    display: inline-block;
-    font-size: min(3rem, 7vw);
-    margin: 0 0 1rem 0;
+    @extend %title;
   }
+}
+
+.skills {
+  &__title {
+    @extend %title;
+  }
+
+  &__subtitle {
+    @extend %title;
+    font-size: 2rem;
+  }
+
+  &__group {
+    width: 100%;
+    height: 15.4rem;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__el {
+    background-color: $text-color;
+    height: 9.9rem;
+    width: 12rem;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    color: $bg-color;
+    flex-direction: column;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+    transition-duration: 0.3s;
+    margin: 0 0.5rem;
+
+    &:hover {
+      transform: scale(1.1) rotate(-2deg);
+    }
+
+    img {
+      height: 5rem;
+      margin: 0 0 1rem 0;
+    }
+  }
+}
+
+.frontend {
+  background-color: #D84923;
+}
+
+.backend {
+  background-color: #4D588E;
+}
+
+.botdev {
+ background-color: #25A3E1
+}
+
+.contacts {
+  &__title {
+    @extend %title;
+  }
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
 }
