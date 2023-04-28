@@ -1,0 +1,18 @@
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+$bg-color: #222;
+$text-color: #fff;
+
+$sb-bg-color: #111;
+$sb-bar-color: #333;
+
+%title {
+  display: inline-block;
+  font-size: min(3rem, 7vw);
+  margin: 0 0 1rem 0;
+}

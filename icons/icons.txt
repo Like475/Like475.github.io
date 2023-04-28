@@ -1,0 +1,16 @@
+front
+
+html
+css
+sass
+js
+bootstrap
+flex
+grid
+
+
+backend
+
+python
+nodejs
+flask
